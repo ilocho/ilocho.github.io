@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+}
+html, body {
+  display:grid;
+  width:100%;
+  height:100%;
+  overflow:hidden;
+  margin:0;
+  padding:0;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+}
+a, h1 {
+  font-family: 'Unica One', cursive;
+  color: #fff;
+  text-transform:uppercase;
+  text-decoration:none;
+}
+a:hover {
+  color:#666;
+  text-decoration:none;
+}
+.navbar {
+  overflow:hidden;
+  background:#000;
+  position:fixed;
+  top:0;
+  width:100%;
+  height:40px;
+}
+.navbar a {
+  float:left;
+  display: block;
+  color:#fff;
+  text-align:center;
+  padding: 11px 13px;
+  text-decoration: none;
+}
+.navbar ul {
+  list-style-type:none;
+  margin:0;
+  padding:0;
+  overflow:hidden;
+  background-color:#333;
+}
+.navbar li {
+  float:right;
+}
+.container {
+  margin-top:40px;
+  position:relative;
+  overflow:hidden;
+  /* overflow-y:auto; */
+  scroll-behavior:smooth;
+  -webkit-overflow-scrolling:touch;
+}
+.inner-container {
+  position:absolute;
+  width:100%;
+  height:400%;
+}
+.box {
+  color: #fff;
+  padding: 20px 0;
+  font-size: 150%;
+  vertical-align: middle;
+}
+.grid {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: auto auto auto;
+  color: #444;
+}
+.height {
+  height: 100vh;
+}
+.a {
+  grid-column: 1 / 4;
+  grid-row: 1;
+  text-align: center;
+}
+.b {
+  grid-column: 2 / 4;
+  grid-row: 1 / 7;
+  text-align: left;
+}
+.c {
+  grid-column: 1 / 2;
+  grid-row: 8;
+  text-align: center;
+}
+.d {
+  grid-column: 2 / 3;
+  grid-row: 8;
+  text-align: center;
+}
+.e {
+  grid-column: 3;
+  grid-row: 8;
+  text-align: center;
+}
+.row1 {
+  background:#f2f2f2;
+}
+.row2 {
+  background-image:linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)), url("../img/mickey.png");
+}
+.row3 {
+  background-color:#666;
+}
+.row4 {
+  background-color:#999;
+}
+.carousel-cell {
+  width:80vw;
+  height:85vh;
+  margin-right:10px;
+  border-radius:5px;
+  background:#8c8;
+}

@@ -1,27 +1,68 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Tom Walsh | Production Designer</title>
-<!-- CSS -->
-<link rel="stylesheet" href="css/styles.css" media="screen">
-<!-- flickity / CDN -->
-<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-<!-- JS -->
-<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <title>Tom Walsh | Production Designer</title>
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <!-- CSS & Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Unica+One">
+  <link rel="stylesheet" href="styles/styles.css" media="screen">
+  <link rel="stylesheet" href="styles/grid.css" media="screen">
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  <!-- JS -->
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </head>
 
+<div class="navbar">
+  <ul>
+    <li><a href="#four">Contact</a></li>
+    <li><a href="#three">Résumé</a></li>
+    <li><a href="#two">TV</a></li>
+    <li><a href="#one">Film</a></li>
+    <a href="index.html">Thomas A. Walsh</a>
+  </ul>
+</div>
+
 <body>
-  <!-- Flickity HTML init -->
-  <div class="carousel"
-    data-flickity='{ "wrapAround": true }'>
-    <div class="carousel-cell"></div>
-    <div class="carousel-cell"></div>
-    <div class="carousel-cell"></div>
-    <div class="carousel-cell"></div>
-    <div class="carousel-cell"></div>
+  <div class="container">
+  <div class="inner-container">
+
+    <div class="row1" id="one">
+      <div class="box height">
+        <div class="carousel" data-flickity='{ "wrapAround": true }'>
+          <div class="carousel-cell"></div>
+          <div class="carousel-cell"></div>
+          <div class="carousel-cell"></div>
+          <div class="carousel-cell"></div>
+          <div class="carousel-cell"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row2" id="two">
+      <div class="grid height">
+        <div class="box a">
+          <p>Hoopla!</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row3" id="three">
+      <div class="grid height">
+        <div class="box a">
+          <a href="img/resume.pdf">View My Résumé</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="row4" id="four">
+      <div class="grid height">
+        <div class="box a">
+          Hoopla!
+        </div>
+      </div>
+    </div>
+
+  </div>
   </div>
 </body>
-
-<footer>
-</footer>
 </html>
